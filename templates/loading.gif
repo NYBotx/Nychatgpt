@@ -1,0 +1,2 @@
+def send_loading_animation(chat_id):
+    bot.send_animation(chat_id=chat_id, animation=open("templates/loading.gif", "rb"))
