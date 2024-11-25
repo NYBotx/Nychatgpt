@@ -36,4 +36,9 @@ def process_mode_input(update: Update, context: CallbackContext, mode):
     elif mode == "mode_chat":
         response = gpt_response(user_message)
         update.message.reply_text(response)
-      
+
+    
+      import pyfiglet
+def style_text(text):
+    return pyfiglet.figlet_format(text)
+
